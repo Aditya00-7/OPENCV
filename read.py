@@ -1,4 +1,4 @@
-import cv2  as cv
+import cv2 as cv
 
 img = cv.imread('image/dog.jpeg')
  
@@ -18,6 +18,7 @@ def changeres(width, height):
     capture.set(3, width)
     capture.set(4, height)
 
+
   # reading video
 capture = cv.VideoCapture('video/video11.mp4')
 while True:
@@ -28,6 +29,7 @@ while True:
     if cv.waitKey(20) & 0xFF==ord('d'):
         break
 capture.release()
+
 cv.destroyAllWindows()
 
 cv.waitKey(0) 
